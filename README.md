@@ -67,11 +67,11 @@ Please file your bug reports and issues via GitHub: https://github.com/Vascomax/
 ## Build andOTP To Support Companion Mode With tizOTP:
 In order to sync automatically between andOTP and tizOTP using the Samsung Accessory Protocol (SAP), the Accessory SDK needs to be included in the andOTP build.  
 To make it work, you should be able to build your own andOTP version with android studio. Maybe if there is a higher demand for Galaxy Watch support, it will be implemented in the official play store version.  
-Until then you can download the fork/branch on my GitHub repository https://github.com/Vascomax/andOTP/tree/GalaxyWatchTizen and build it for your phone. I try to keep it in sync with the main andOTP development.  
+Until then you can download the fork/branch on my GitHub repository https://github.com/Vascomax/andOTP/tree/GalaxyVersionMaster and build it for your phone. I try to keep it in sync with the main andOTP development.  
 Or you make the changes in your own fork. The changes are not big:
 - 2 Files for the SAP SDK needs to be included as lib files. Copy them to the lib folder (create if not there). And right click on both files selecting "Add as libary"
-- add the accessory.xml to the res/xml folder
-- make few additions in the manifest.xml to include the service and the permissions
+- add the accessoryservices.xml to the res/xml folder
+- make few additions in the AndroidManifest.xml to include the service and the permissions
 - add the new tizen.class
 - add a few lines in one existing class (EntryCardAdapter) to implement the syncing 
 -  .....   That's it.
