@@ -74,6 +74,7 @@ Or you make the changes in your own fork. The changes are not big:
 - make few additions in the AndroidManifest.xml to include the service and the permissions
 - add the new tizen.class
 - add a few lines in one existing class (EntryCardAdapter) to implement the syncing 
--  .....   That's it.
+- add a method in existing settings.java class
+-  .....   That's it. The rest of the changes are only cosmetical
 
-In order to make it work you need to set a password for automatic backups in the andOTP settings (no need to activate the auto backup feature itself). This password is used to encrypt the data which is sent to the Galaxy Watch through the SAP. The encryption is identical to the normal andOTP password backup encryption.
+In order to make it work you need to set a password for automatic backups in the andOTP settings (no need to activate the auto backup feature itself). This password is used to encrypt the data which is then sent to the Galaxy Watch through the secureSend method of SAP only via bluetooth (no Internet/Network/Cloud transmissions). The encryption is identical to the normal andOTP password backup encryption (AES/GCM with 256bit key).
