@@ -1,5 +1,5 @@
 # tizOTP
-TOTP / HOTP app for Galaxy Watch / Tizen wearable
+TOTP / HOTP app for Galaxy Watch® / Tizen® wearable
 
 Disclaimer: the application is considered as add-on to your normal OTP app. Never should your Galaxy Watch and tizOTP be the only single place where you keep OTP accounts. tizOTP is desiged as a secondary/sync-slave app. No liabilty for any damages or lost data. Usage at own risk.
 The tizOTP development (although highly appreciating the work of the andOTP team) is currently independent from andOTP... Dont blame them for this app.
@@ -15,7 +15,7 @@ The tizOTP development (although highly appreciating the work of the andOTP team
 - automatic icon assignment built in for many websites
 - Comes with a widget where the 4 favorite OTP Accounts are just a bezel turn away
 
-This application reads either plaintext or password encrypted andOTP backup files (current andOTP encryption type since v0.6.3) offline and stores the accounts on the Galaxy watch. This is the stand-alone mode. Of course you don't need andOTP to create plaintext files with your otp accounts, as long as you have the secrets (Base32 encoded).
+This application reads either plaintext or password encrypted andOTP backup files (current andOTP encryption type since v0.6.3) offline and stores the accounts on the Galaxy Watch®. This is the stand-alone mode. Of course you don't need andOTP to create plaintext files with your otp accounts, as long as you have the secrets (Base32 encoded).
 In the andOTP companion mode, tizOTP receives data directly from the andOTP app on the phone (if the galaxy version of andOTP with modifications is used).
 An additional widget is provided where 4 accounts and their current TOTP/HOTP code is displayed.
 Icons are automatically recognized and displayed based on the correct issuer name. (many issuers are already supported)
@@ -25,7 +25,7 @@ Filesystem.read (to read the andOTP backup file)
 Application.launch (so the widget can trigger the new code generation process)
 
 ### Limitations so far:
-- Only developed and tested for Tizen 3.0 / 4.0 and 5.5 on Galaxy watch (42mm bluetooth with bezel). Maybe others might work, but are not supported so far
+- Only developed and tested for Tizen® 3.0 / 4.0 and 5.5 on Galaxy Watch® (42mm bluetooth with bezel). Maybe others might work, but are not supported so far
 - EARLY access
 - test version is limited to 3 accounts
 - only 6 digit TOTP with 30s interval are officially supported (other formats are implemented as well, but there can be display problems). Also the global time circle and 5s warning colors are desinged for the standard 30s TOTP tokens.
@@ -34,7 +34,7 @@ Application.launch (so the widget can trigger the new code generation process)
 ## Usage:
 ### Standalone mode / backup load
 - name your encrypted andOTP backup file exactly "accounts.json.aes.mp3" or "accounts.json.mp3" if using plain text backup file
-- transfer the file as music e.g. via the wearable app ("add music") into the "Music" folder on the Galaxy watch (file:///opt/usr/home/owner/media/Music)
+- transfer the file as music e.g. via the wearable app ("add music") into the "Music" folder on the Galaxy Watch® (file:///opt/usr/home/owner/media/Music)
 - Install/ Start the main application
 - At the first start (or until a backup is loaded) some example data is loaded for testing (if you cancel the password input with back key)
 - To load the backup data enter the password for the andOTP backup, select the appropriate option (encrypted or plain) and press load (if plain text backup is used, you do not need to enter a password here. For internal data encryption a random key is created)
@@ -78,3 +78,8 @@ Or you make the changes in your own fork. The changes are not big:
 -  .....   That's it. The rest of the changes are only cosmetical
 
 In order to make it work you need to set a password for automatic backups in the andOTP settings (no need to activate the auto backup feature itself). This password is used to encrypt the data which is then sent to the Galaxy Watch through the secureSend method of SAP only via bluetooth (no Internet/Network/Cloud transmissions). The encryption is identical to the normal andOTP password backup encryption (AES/GCM with 256bit key).
+
+<sub>Tizen is a registered trademark of The Linux Foundation.  
+Samsung Galaxy Watch® is a registered trademark of the Samsung Electronics Co., Ltd.  
+Other names and brands may be claimed as the property of others.</sub>
+
