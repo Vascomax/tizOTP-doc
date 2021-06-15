@@ -1,7 +1,7 @@
 # tizOTP
 TOTP / HOTP app for Galaxy Watch® / Tizen® wearable
 
-Disclaimer: the application is considered as add-on to your normal OTP app. Never should your Galaxy Watch and tizOTP be the only single place where you keep OTP accounts. tizOTP is desiged as a secondary/sync-slave app. No liabilty for any damages or lost data. Usage at own risk.
+Disclaimer: the application is considered as add-on to your normal OTP app. Never should your Galaxy Watch® and tizOTP be the only single place where you keep OTP accounts. tizOTP is desiged as a secondary/sync-slave app. No liabilty for any damages or lost data. Usage at own risk.
 The tizOTP development (although highly appreciating the work of the andOTP team) is currently independent from andOTP... Dont blame them for this app.
 
 ## Features
@@ -66,7 +66,7 @@ Please file your bug reports and issues via GitHub: https://github.com/Vascomax/
 ## Build andOTP To Support Companion Mode With tizOTP:
 In order to sync automatically between andOTP and tizOTP using the Samsung Accessory Protocol (SAP), the Accessory SDK needs to be included in the andOTP build. This is already done in the andOTP Galaxy version, which can be downloaded from the Samsung Galaxy Store. 
 
-If you want to make it work by yourself, you should be able to build your own andOTP version with android studio. Maybe if there is a higher demand for Galaxy Watch support, it will be implemented in the official play store version too (currently only the Galaxy Store version has it and is not compatible with andOTP from the Google Play store)  
+If you want to make it work by yourself, you should be able to build your own andOTP version with android studio. Maybe if there is a higher demand for Galaxy Watch® support, it will be implemented in the official play store version too (currently only the Galaxy Store version has it and is not compatible with andOTP from the Google Play store)  
 You can download the fork/branch on the GitHub repository https://github.com/Vascomax/andOTP/tree/GalaxyVersionMaster and build it for your phone. It will be kept in sync with the main andOTP development.  
 Or you make the changes in your own fork. The changes are not big:
 - 2 Files for the SAP SDK needs to be included as lib files. Copy them to the lib folder (create if not there). And right click on both files selecting "Add as libary"
@@ -77,7 +77,7 @@ Or you make the changes in your own fork. The changes are not big:
 - add a method in existing settings.java class
 -  .....   That's it. The rest of the changes are only cosmetical
 
-In order to make it work you need to set a password for automatic backups in the andOTP settings (no need to activate the auto backup feature itself). This password is used to encrypt the data which is then sent to the Galaxy Watch through the secureSend method of SAP only via bluetooth (no Internet/Network/Cloud transmissions). The encryption is identical to the normal andOTP password backup encryption (AES/GCM with 256bit key).
+In order to make it work you need to set a password for automatic backups in the andOTP settings (no need to activate the auto backup feature itself). This password is used to encrypt the data which is then sent to the Galaxy Watch® through the secureSend method of SAP only via bluetooth (no Internet/Network/Cloud transmissions). The encryption is identical to the normal andOTP password backup encryption (AES/GCM with 256bit key).
 
 <sub>Tizen is a registered trademark of The Linux Foundation.  
 Samsung Galaxy Watch® is a registered trademark of the Samsung Electronics Co., Ltd.  
